@@ -37,7 +37,7 @@ jobs:
 
       - name: Upload BOM to Dependency-Track
         run: |
-          curl -v -X POST "https://dependency-track-devsecops-669358591.azurewebsites.net/api/v1/bom" \
+          curl -v -X POST "https://dependency-track-devsecops-67679185.azurewebsites.net/api/v1/bom" \
             -H "X-API-Key: ${{ secrets.DTRACKAPIKEY }}" \
             -F "project=${{ secrets.DTRACKPROJID }}" \
             -F "projectName=DevSecOps" \

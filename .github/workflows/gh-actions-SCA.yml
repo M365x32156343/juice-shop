@@ -29,6 +29,9 @@ jobs:
       - name: Install CycloneDX
         run: npm install --global @cyclonedx/cyclonedx-npm
 
+      - name: Install XMLBuilder2
+        run: npm install xmlbuilder2
+
       - name: Generate SBOM
         run: cyclonedx-npm --output-file bom.xml --output-format XML
 
